@@ -4,77 +4,101 @@ namespace CSharp
 {
     class Program
     {
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            CharToInt c=new CharToInt();
+            CharToInt c = new CharToInt();
             c.test();
-            Arithmatic arth=new Arithmatic();
+            Arithmatic arth = new Arithmatic();
             arth.arithmaticOp();
-            ArrayDemo ar=new ArrayDemo();
+            ArrayDemo ar = new ArrayDemo();
             ar.test();
-            TwoDArray td=new TwoDArray();
+            TwoDArray td = new TwoDArray();
             td.testTwoD();
-            JaggadArray j=new JaggadArray();
+            JaggadArray j = new JaggadArray();
             j.testJagArr();
-            ArrayResizing ars=new ArrayResizing();
+            ArrayResizing ars = new ArrayResizing();
             ars.testArrResize();
-            ArrayCopyToMethod ct=new ArrayCopyToMethod();
+            ArrayCopyToMethod ct = new ArrayCopyToMethod();
             ct.copyToMethod();
-            StaticDemo sd=new StaticDemo();
+            StaticDemo sd = new StaticDemo();
             sd.testStatic();
-            NullCoalescingOperator nc=new NullCoalescingOperator();
+            NullCoalescingOperator nc = new NullCoalescingOperator();
             nc.testOperator();
-            GetValueOrDefaultDemo gvd=new GetValueOrDefaultDemo();
+            GetValueOrDefaultDemo gvd = new GetValueOrDefaultDemo();
             gvd.testGetValueOrDefault();
-            NullableHasValueDemo nhv=new NullableHasValueDemo();
+            NullableHasValueDemo nhv = new NullableHasValueDemo();
             nhv.testNullableHasValue();
-            VariableScope vs=new VariableScope();
+            VariableScope vs = new VariableScope();
             vs.testVariableScope();
-            DataTypeTest dt=new DataTypeTest();
+            DataTypeTest dt = new DataTypeTest();
             dt.testDataType();
-            AccessModifierPublic pub=new AccessModifierPublic();
+            AccessModifierPublic pub = new AccessModifierPublic();
             pub.testPublic();
-            AccessModifiersProtected prot=new AccessModifiersProtected();
+            AccessModifiersProtected prot = new AccessModifiersProtected();
             prot.testProtected();
-            AccessModifiersInternal intern=new AccessModifiersInternal();
+            AccessModifiersInternal intern = new AccessModifiersInternal();
             intern.testInternal();
-            MethodLongestString ml=new MethodLongestString();
+            MethodLongestString ml = new MethodLongestString();
             ml.testFindLongest();
-            MethodRecursiveFact mr=new MethodRecursiveFact();
+            MethodRecursiveFact mr = new MethodRecursiveFact();
             mr.testFactorial();
-            MethodReturngObject mro=new MethodReturngObject();
+            MethodReturngObject mro = new MethodReturngObject();
             mro.testSDCard();
-            MethodReturningParameters mrp=new MethodReturningParameters();
+            MethodReturningParameters mrp = new MethodReturningParameters();
             mrp.combine();
-            MethodPartial mpr=new MethodPartial();
+            MethodPartial mpr = new MethodPartial();
             // mpr.OnSomethingHappened("Nitin");
-            MethodExtension1 me=new MethodExtension1();
-            me.test4();me.test5("Extended Method");
-            string s="I AM STILL WORTHY";
-            Console.WriteLine("\n"+s+" ==> "+s.toProper());
-            MethodUsingDelegates2 mud2=new MethodUsingDelegates2();
+            MethodExtension1 me = new MethodExtension1();
+            me.test4(); me.test5("Extended Method");
+            string s = "I AM STILL WORTHY";
+            Console.WriteLine("\n" + s + " ==> " + s.toProper());
+            MethodUsingDelegates2 mud2 = new MethodUsingDelegates2();
             mud2.testDelegates();
             MethodDelegateMulticast mdm = new MethodDelegateMulticast();
             mdm.testMulticast(45);
-
-            MethodAnnonymous ma=new MethodAnnonymous();
+            MethodAnnonymous ma = new MethodAnnonymous();
             ma.testAnnonymous("Koduko");
-            KeywordGetSet kgs=new KeywordGetSet();
+            KeywordGetSet kgs = new KeywordGetSet();
             kgs.testGetSet();
-
-            KeywordAs ka=new KeywordAs();
+            KeywordAs ka = new KeywordAs();
             ka.testAsKeyword();
-
-            KeywordIs ki=new KeywordIs();
+            KeywordIs ki = new KeywordIs();
             ki.testIsKeyword();
-
-            IfDemo if1=new IfDemo();
+            IfDemo if1 = new IfDemo();
             if1.testEvenOdd();
             if1.testGreater();
-            SwitchDemo swd=new SwitchDemo();
+            SwitchDemo swd = new SwitchDemo();
             swd.testSwitch();
-
+            SwitchWithGoto sg = new SwitchWithGoto();
+            sg.testSwitchGoto();
+            WhileDemo wd = new WhileDemo();
+            wd.testWhileDemo();
+            ForDemo fr=new ForDemo();
+            fr.testForDemo();
+            DoWhileDemo dw=new DoWhileDemo();
+            dw.testDoWhile();
+            KeywordContinue kc=new KeywordContinue();
+            kc.testContinue();
+            ForEachDemo fe=new ForEachDemo();
+            fe.testForEach();
+            KeywordThrow kt=new KeywordThrow();
+            kt.testThrow();
+            Doctor d = new Doctor("Kavish", "Dermatology", 34, "Pune");
+            Console.WriteLine(d.toString());   
+            NestedClass nest=new NestedClass();
+            nest.testNestedClass();
+            InheritanceDemo id=new InheritanceDemo();
+            id.testInheritance();
+            InheritObjectClass io=new InheritObjectClass();
+            io.testObjectClass();
+            InheritMultilevel im=new InheritMultilevel();
+            im.testMultilevelInherit();
+            InheritMutiple imul=new InheritMutiple();
+            imul.testMultipleInherit();
+            SealedClassDemo sc=new SealedClassDemo();
+            sc.testSealedClass();
+            
 
 
 
